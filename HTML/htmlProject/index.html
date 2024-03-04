@@ -10,9 +10,9 @@
 <body>
     <h1 align="center">Chit Thu Wai</h1>
     <nav align="center">
-        <a href="description.html" align="center">Description</a>|
-        <a href="filmography.html" align="center">Filmography</a>|
-        <a href="comment.html" align="center">Comment</a>|
+        <a href="description.html" align="center" id="description" name="description_name">Description</a>|
+        <a href="filmography.html" align="center" id="filmography" name="filmography_name">Filmography</a>|
+        <a href="comment.html" align="center" id="comment" name="comment_name">Comment</a>|
     </nav>
     <br><br>
     <table border="1" cellspacing="0" cellpadding="10" align="center">
@@ -177,17 +177,26 @@
         allowfullscreen></iframe>
     <hr>
     <h2 align="center">Leave a comment</h2>
-    <form action="" align="center">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name_id"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email_id"><br><br>
-        <label for="comment">Comment:</label><br>
-        <textarea name="comment" id="textarea_id" cols="30" rows="10"></textarea><br><br>
-        <button type="button">Add</button>
+    <table align="center" cellpadding="10">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"></td>
+        </tr>
         <br>
-        <hr>
-    </form>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Comment:</td>
+            <td><textarea name="comment_textarea" id="" cols="25" rows="10"></textarea></td>
+        </tr>
+
+    </table>
+    <p align="center">
+        <input type="button" value="Add">
+    </p>
+    <hr>
 
     <footer>
         <p align="center">&copy;All Right Reserved | Make with <span style="color: red;">&hearts;</span> </p>
