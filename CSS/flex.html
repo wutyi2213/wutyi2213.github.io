@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: blue;
+            flex-direction: row-reverse;
+            /* row(default) row-reverse coloum coloum-reverse*/
+            justify-content: flex-end;
+            /* center | flex-start | flex-end | baseline */
+            /* row-reverse so yin justify-content pr reverse lote twr dr */
+        }
+
+        .flex-container .flex-item {
+            background-color: white;
+            width: 150px;
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item" style="order: 3;">
+            <h1>Title 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laboriosam dolor sapiente! Quam minima
+                id voluptate, tempora dignissimos quo expedita dolorem modi enim fugiat recusandae.</p>
+        </div>
+        <div class="flex-item" style="order: 2;">
+            <h1>Title 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laboriosam dolor sapiente! Quam minima
+                id voluptate, tempora dignissimos quo expedita dolorem modi enim fugiat recusandae.</p>
+        </div>
+        <div class="flex-item" style="order: 6;">
+            <h1>Title 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laboriosam dolor sapiente! Quam minima
+                id voluptate, tempora dignissimos quo expedita dolorem modi enim fugiat recusandae.</p>
+        </div>
+        <div class="flex-item" style="order: 5;">
+            <h1>Title 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laboriosam dolor sapiente! Quam minima
+                id voluptate, tempora dignissimos quo expedita dolorem modi enim fugiat recusandae.</p>
+        </div>
+        <div class="flex-item" style="order: 4;">
+            <h1>Title 5</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laboriosam dolor sapiente! Quam minima
+                id voluptate, tempora dignissimos quo expedita dolorem modi enim fugiat recusandae.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

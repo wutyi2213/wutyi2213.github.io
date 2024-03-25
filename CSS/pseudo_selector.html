@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Selector</title>
+    <style>
+        p:hover {
+            color: red;
+        }
+
+        h1 a:hover {
+            color: red;
+            font-size: 50px;
+            background-color: black;
+        }
+
+        h2 a:visited {
+            color: green;
+        }
+
+        h2 a:active {
+            color: palevioletred;
+        }
+
+        input[type="text"]:focus {
+            background-color: blueviolet;
+        }
+
+        ul li:first-child {
+            color: green;
+        }
+
+        ul li:last-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello</p>
+    <h1><a href="#">Hover Selector</a></h1>
+    <h2>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.flymya.com">FlyMya</a>
+        <a href="https://www.youtube.com">Youtube</a>
+    </h2>
+    <input type="text">
+    <ul type="square">
+        <li>Apple Macbook</li>
+        <li>Lenovo ThinPad</li>
+        <li>HP</li>
+        <li>Ausu</li>
+    </ul>
+</body>
+
+</html>

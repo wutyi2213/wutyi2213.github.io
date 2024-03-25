@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 3fr 2fr 1fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 3fr 2fr 1fr; */
+            /* grid-template-rows: repeat(2, 3fr); */
+            background-color: #837070;
+            padding: 50px;
+            /* row-gap: 15px;
+            column-gap: 30px; */
+            /* gap lo + yay yin shae ka row nout ka column */
+            gap: 20px 50px;
+
+            .grid-item {
+                background-color: palegreen;
+                border: 1px solid black;
+                padding: 25px;
+                text-align: center;
+            }
+
+            .item1 {
+                background-color: yellow;
+                grid-column: 2 / span 3;
+                /* 2 = 2 column nay yr mr htar mr span3= 3ku sr + mr */
+                grid-row: 1/span2;
+            }
+
+            .item4 {
+                background-color: blue;
+                color: white;
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h3>Header 1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+        <div class="grid-item item2">
+            <h3>Header 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+        <div class="grid-item item3">
+            <h3>Header 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+        <div class="grid-item item4">
+            <h3>Header 4</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+        <div class="grid-item item5">
+            <h3>Header 5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+        <div class="grid-item item6">
+            <h3>Header 6</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia, dolorum repellendus consequatur
+                quasi voluptatum ab provident accusantium hic vitae!</p>
+        </div>
+    </div>
+</body>
+
+</html>

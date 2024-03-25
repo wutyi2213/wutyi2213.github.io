@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* University selector */
+        * {
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+
+        /* element selector */
+        p {
+            color: gold;
+        }
+
+        h2 {
+            background-color: black;
+        }
+
+        /*id selector*/
+        #selector-lesson {
+            font-size: 50px;
+        }
+
+        /* class selector */
+        .general {
+            color: blue;
+            border: 5px solid pink;
+            font-size: 70px;
+        }
+
+        .name-question {
+            color: yellow;
+            background-color: black;
+            font-size: 25px;
+        }
+
+        /* attribute selector */
+        a[title="Google Website"] {
+            font-size: 32px;
+        }
+
+        /* Descendant selector */
+        div p {
+            background-color: rgb(0, 204, 255);
+
+        }
+
+        /* child selector */
+        div>p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>University selectors</h2>
+    <p>Hello selectors</p>
+    <p id="selector-lesson">Selector lessoon</p>
+    <p class="general">This is class selector.</p><br>
+    <p class="general">I am in YE,Mon State.</p>
+    <p class="name-question">What is your name?</p>
+    <a href="" title="Google Website">Google</a>
+
+
+    <div>
+        <p>This is paragraph1.</p>
+        <p>This is paragraph2.</p>
+        <p>This is paragraph3.</p>
+        <span>
+            <p>This is paragraph4.</p>
+        </span>
+        <p>This is paragraph 5.</p>
+    </div>
+</body>
+
+</html>
