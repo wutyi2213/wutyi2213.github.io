@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #000;
     color: #fc468d;
+
 }
 
 .navbar {
@@ -14,38 +16,14 @@ body {
     grid-template-columns: auto 1fr;
     gap: 30px;
     align-items: center;
-    margin: 12px 10px 35px 10px;
-
+    margin: 12px 10px 100px 12px;
 }
 
 .profile-name h1 {
     letter-spacing: 2px;
     font-size: 40px;
     text-shadow: 2px 2px white;
-    /* background-color: black;
-    animation-name: example;
-    animation-duration: 20s; */
-
 }
-
-
-/* @keyframes example {
-    0% {
-        background-color: black;
-    }
-
-    25% {
-        background-color: yellow;
-    }
-
-    50% {
-        background-color: blue;
-    }
-
-    100% {
-        background-color: green;
-    }
-} */
 
 .profile-list {
     display: grid;
@@ -74,41 +52,65 @@ body {
     border-radius: 20px;
 }
 
+
+/* banner */
 .title {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 100px;
 }
 
-.title-work,
-.title-name {
+.title-work {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    color: #fff;
+    margin-left: 50px;
 
 }
 
+.title .title-name {
+    color: #fc468d;
+
+}
+
+.title h2 .title-name {
+    margin-left: 50px;
+}
+
 .title img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 400px;
+    margin-left: 100px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+.wave {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* margin-top: 10px; */
+}
+
+.coming-soon-film {
+    margin: 22em auto auto auto;
+}
+
+
 .coming-soon-film h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px auto;
+    margin: 100px auto;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -126,6 +128,14 @@ body {
     width: 350px;
     height: auto;
     margin-left: 150px;
+    border-radius: 5px;
+}
+
+.film-details img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 .film-info h3 {
@@ -147,7 +157,7 @@ body {
     width: 50%;
     margin-top: 30px;
     font-size: 20px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
 
 }
@@ -163,6 +173,16 @@ body {
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
+
+
+
+}
+
+.biography img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 /* Biography */
@@ -172,12 +192,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin: 100px 100px 50px 150px;
+    margin: 100px 100px 120px 150px;
 }
 
 .bio-text h3 {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
     color: #fc468d;
@@ -204,4 +224,177 @@ body {
     width: 400px;
     height: 450px;
 
+}
+
+/* discography */
+/* .discography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+} */
+.discography {
+    margin-bottom: 100px;
+}
+
+.discography-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.discography-album {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* gap: 5px; */
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.discography-album .song {
+    margin: 50px 100px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.discography-album .shortFilm {
+    /* margin: 50px 100px; */
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.discography-album .movie {
+    margin: 50px 100px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.discography-album .song :hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
+
+}
+
+.discography-album .shortFilm:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
+
+}
+
+.discography-album .movie :hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
+
+}
+
+
+
+.discography-album img {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    border-radius: 5px;
+
+}
+
+
+
+
+
+.discography-album .albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discography-album .song a,
+.shortFilm a,
+.movie a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.discography-album .song img {
+    width: 220px;
+    height: 240px;
+    margin-bottom: 30px;
+}
+
+.discography-album .shortFilm img {
+    width: 230px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+.discography-album .movie img {
+    width: 220px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+
+
+.discography-album .song .albums {
+    margin-bottom: 30px;
+
+}
+
+/* footer */
+.footer {
+    background-color: #fc468d;
+    padding: 50px 0;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+
+.footer-title {
+    color: white;
+
+}
+
+.footer .second-text {
+    margin-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.footer-icons {
+    margin-top: 10px;
+
+}
+
+.footer-icons i {
+    margin: 20px 20px 30px auto;
+    font-size: 30px;
+}
+
+.footer-icons i:hover {
+    transform: scale(1.5);
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
 }

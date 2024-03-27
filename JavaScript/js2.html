@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Data Types</h1>
+
+
+
+    <script>
+
+        //String Data Type
+        let name = "Wut Yi ";
+        document.write("<h3>" + name + "</h3>");
+        document.write("<h3>" + typeof (name) + "</h3>");
+
+        let job = "Developer";
+        document.write("<h3>" + job + "</h3>");
+        document.write("<h3>" + typeof (job) + "</h3>");
+
+        let partTime = 'Trainer';
+        document.write("<h3>" + partTime + "</h3>");
+        document.write("<h3>" + typeof (partTime) + "</h3>");
+
+
+
+        //Numeric Data Type
+        let age = 27 + 3;
+        document.write("</h3>" + age + "</h3>"); //30
+        document.write("<h3>" + typeof (age) + "</h3>"); //number
+
+        let ageStr = "27"; //or let ageStr = `27`;
+        document.write("</h3>" + ageStr + "</h3>"); //27
+        document.write("<h3>" + typeof (ageStr) + "</h3>"); //string
+
+        let ageStrTest = "27" + "3";
+        document.write("<h3>" + ageStrTest + "</h3>");  //273
+        document.write("<h3>" + typeof (ageStrTest) + "</h3>"); //string
+
+
+
+        //Boolean Data Type
+        let js = true;
+        document.write("</h3>" + js + "</h3>");
+        document.write("<h3>" + typeof (js) + "</h3>");
+
+        let go = false;
+        document.write("</h3>" + go + "</h3>");
+        document.write("<h3>" + typeof (go) + "</h3>");
+
+        //Array
+
+        let students = ["Maung Maung", "Aung Aung", "Mya Mya", "Hla Hla"];
+        console.log(students);
+        console.log(typeof (students));
+        document.write("<h3>" + students[2] + "</h3>");
+
+        let studentData = [["Mg Mg", "Aung Aung", "Hla Hla"], [23, 34, 45], ["Yangon", "Mandalay", "Monwya"]];
+        console.log(studentData);
+        console.log(studentData[0]);
+        console.log(studentData[1]);
+        console.log(studentData[2]);
+
+        //console mr show dr
+        console.log(studentData[0][1], studentData[1][1]);
+
+        //document mr show dr
+        document.write("<h3>" + studentData[0][0] + "</h3>");
+        document.write("<h3>" + studentData[1][0] + "</h3>");
+        document.write("<h3>" + studentData[2][0] + "</h3>");
+
+        document.write("<h3>" + studentData[0][0], studentData[1][0], studentData[2][0] + "</h3>");
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
