@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 7</title>
+</head>
+
+<body>
+    <h1>String Lesson</h1>
+    <script>
+        //string
+        let firstName = 'Wutyi';
+        let lastName = 'Aung';
+        document.write('<h1>' + typeof (firstName) + '</h1>');
+        document.write('<h1>' + typeof (lastName) + '</h1>');
+
+        document.write('<h1>' + firstName + '</h1>');
+        document.write('<h1>' + lastName + '</h1>');
+
+        document.write('<h1>' + firstName.length + '</h1>');
+        document.write('<h1>' + lastName.length + '</h1>');
+
+        let fullName = firstName.concat(' ', lastName);
+        document.write('<h3>' + fullName + '</h3>');
+        document.write('<h3>My name is ' + fullName + '</h3>');
+        document.write('<h3>My name is ' + fullName.length + '</h3>');
+        document.write(`<h1>My name is ${fullName}</h1>`);
+
+        document.write('<h3>' + fullName[6] + '</h3>');
+        document.write('<h3>' + fullName.toUpperCase() + '</h3>');
+        document.write('<h3>' + fullName.toLowerCase() + '</h3>');
+        document.write('<h3>' + fullName.substr(3, 2) + '</h3>')  //substr (start,number)
+
+
+        let job = ' Web Developer';
+        document.write('<h3>My job is' + job + '</h3>')
+        document.write('<h3>My job is' + job.trim() + '.</h3>')
+
+
+        let ser = 'I want to Yangon';
+        document.write(`<h3>${ser}</h3>`);
+        let ser_result = ser.search('to');
+        document.write(`<h3> ${ser_result}</h3>`);
+
+        let rep_result = ser.replace('Yangon', 'Mandalay');
+        document.write(`<h3> ${rep_result} </h3>`);
+
+        let money = '34,500';
+        money = money.replace(/\,/g, '');
+        document.write(`<h3>${money + 3}</h3>`);
+        document.write(`<h3>${typeof (money)}</h3>`);
+
+        let money_num = Number(money);
+        document.write(`<h3>${money_num + 3}</h3>`);
+        document.write(`<h3>${typeof (money_num + 3)}</h3>`);
+
+        console.log('Hello \n JS');
+        console.log('\t Javascript');
+        console.log('I\'m a programmar');
+        console.log("I am a \"Developer\"");
+        console.log("I'm a programmar");
+        console.log('I am a "Developer"');
+
+
+    </script>
+</body>
+
+</html>

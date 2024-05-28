@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom5</title>
+</head>
+
+<body>
+    <h1 id="heading" onclick="changeColor()">Create textNode Elements Attributes Node </h1>
+    <p id="text_node"></p>
+    <button onclick="create_TextNode()">CreateTextNode</button>
+    <br><br>
+    <button onclick="create_elementNode()">Create Element Node</button>
+    <br><br>
+    <input type="text" name="" id="name">
+    <button onclick="adding()">Add</button>
+    <ul id="ulist">
+        <li>Bo Bo</li>
+    </ul>
+
+    <!-- createTextNode is keyword for js so can't run button to appear hello -->
+
+    <script>
+        function create_TextNode() {
+            //alert('Hello');
+            let text = document.createTextNode('Hello JavaScript text Node');
+            console.log('text');
+            let text_node = document.querySelector('#text_node');
+            text_node.appendChild(text);
+
+        }
+
+        function create_elementNode() {
+            let h3 = document.createElement('p');
+            console.log(h3);
+            h3.innerHTML = 'Create h3 Element';
+            document.body.appendChild(h3);
+        }
+
+        function adding() {
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let li = document.createElement('li');
+            li.innerHTML = name;
+            console.log(li);
+            //let ul = document.querySelector('#ulist');
+            //console.log(ul);
+            //ul.appendChild(li);
+        }
+
+        function changeColor() {
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+            if (attr) {
+                heading.removeAttribute('style');
+
+            } else {
+                heading.setAttribute('style', 'color:red;');
+
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>

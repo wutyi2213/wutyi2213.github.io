@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array lessons</h1>
+
+    <script>
+        //array
+        let arr = [1, 2, 3, 4];
+        console.log(arr);
+        document.write(`<h3>This index value is ${arr[2]}</h3>`);
+        let arr1 = Array('a', 'b', 'c');
+        console.log(arr1);
+        document.write(`<h3>This index value is ${arr[2]}</h3>`);
+
+        let arr2 = [23, 24, 43, 'Mg Mg', 'Aung Aung', 'Htwe Mya', ['Yangon', 'Mandalay', 'Monywa', 1998], true, false];
+        console.log(arr2);
+
+        let multi = [['Mg Mg', 'Aung Aung', 'Hla Hla'], [23, 32, 34], ['Yangon', 'Mandalay', 'Monywa']];
+        console.log(multi);
+
+        let fruits = [];
+        fruits[0] = 'Apple';
+        fruits[1] = 'Orange';
+        fruits[2] = 'Mango';
+        console.log(fruits);
+
+        fruits.push('Banana'); // အနောက်က ထပ် ထည့်တာ
+        console.log(fruits);
+
+        fruits.unshift('Cherry'); //အရှေ့ က ထပ် ထည့်တာ
+        console.log(fruits);
+
+        fruits.pop();  // အနောက်က ဖြုတ်
+        console.log(fruits);
+
+        fruits.shift(); // အရှေ့ က ဖြုတ်
+        console.log(fruits);
+
+        console.log(fruits.sort());
+        console.log(fruits.reverse());
+
+        console.log(typeof (fruits));
+        let fruitString = fruits.toString();
+        console.log(fruitString);
+        console.log(typeof (fruitString));
+
+        fruits = fruitString.split(',');
+        console.log(fruits);
+
+        let str = "Apple Lenovo Acer HP Ausu"
+        console.log(str);
+        let laptops = str.split(' ');
+        console.log(laptops);
+    </script>
+</body>
+
+</html>

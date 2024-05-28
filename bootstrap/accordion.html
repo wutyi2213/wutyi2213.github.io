@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headerOne">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">Accordion Item #1</button>
+                </h2>
+                <div id="#collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo corrupti quaerat
+                        eligendi sed quidem obcaecati eius quod quam adipisci quisquam provident, doloremque dolore
+                        eaque sapiente ad. Eligendi, unde odit.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headerTwo">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ullam laudantium exercitationem
+                        dicta perspiciatis suscipit. Consequuntur unde dolorum voluptatum quam, a accusamus assumenda,
+                        ad et ducimus nulla quidem laborum expedita.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

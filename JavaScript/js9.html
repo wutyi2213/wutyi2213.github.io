@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function lessons</h1>
+
+    <script>
+        //function 
+
+        function funName() {
+            document.write(`<h3>Hello Function</h3>`);
+        }
+
+        funName();
+
+        function result(num1, num2) {
+            let sum = num1 + num2;
+            document.write(`<h3>Sum result is ${sum}</h3>`);
+        }
+
+        function subResult(n1 = 50, n2 = 20) {
+            let sub = n1 - n2;
+            document.write(`<h3>Sub result is ${sub}</h3>`);
+        }
+        subResult();
+        subResult(300, 100);
+
+        function getSize(length, width, height) {
+            let area = length * width;
+            let volume = length * width * height;
+            return [area, volume];
+        }
+        console.log(getSize(3, 4, 2));
+
+        let area = getSize(3, 4, 0)[0];
+        let volume = getSize(3, 4, 2)[1];
+        document.write(`<h3>The area is ${area}</h3>`);
+        document.write(`<h3>The volume is ${volume}</h3>`);
+
+
+        //object 
+        let hotel = {
+            name: 'XYZ Hotel',
+            rooms: 40,
+            booked: 25,
+            gym: true,
+            roomTypes: ['twin', 'double', 'suite'],
+            checkAvailability: function () {
+                return this.rooms - this.booked;        // 40-25
+            }
+        }
+        console.log(hotel);
+        let hotelName = hotel.name;
+        document.write(`<h3>Hotel name is ${hotelName}</h3>`);
+
+
+        //try 
+        let roomTypesName = hotel.roomTypes[1];
+        document.write(`<h3>Hotel roomTypesName is ${roomTypesName}</h3>`);
+
+        let roomFree = hotel.checkAvailability();
+        document.write(`<h3>Room Free Number is ${roomFree}</h3>`);
+
+        hotel.pool = false;
+        console.log(hotel);
+
+        //delete hotel.pool;
+
+        hotel.name = 'ABC Hotel';
+        console.log(hotel);
+
+
+    </script>
+</body>
+
+</html>

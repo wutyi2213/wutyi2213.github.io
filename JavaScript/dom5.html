@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom5</title>
+</head>
+
+<body>
+    <h1 id="heading">CSS Manimulation with DOM</h1>
+    <button onclick="action()">Action</button>
+    <br><br>
+    <img src="dom1.png" alt="" width="200" height="200" id="dom-img">
+    <br><br>
+    <img src="dom2.png" alt="" width="300" height="150" id="img" onmouseover="big()" onmouseout="normal()">
+
+    <script>
+        function action() {
+            let heading = document.querySelector('#heading');
+            heading.style.color = 'red';
+            heading.style.backgroundColor = 'black';
+
+            let domImg = document.querySelector('#dom-img');
+            domImg.style.width = '400px';
+            domImg.style.height = '440px';
+
+        }
+
+        let img = document.querySelector('#img');
+
+        function big() {
+            img.style.width = "400px";
+            img.style.height = "200px";
+
+        }
+        function normal() {
+            img.style.width = "300px";
+            img.style.height = "150px";
+        }
+
+
+    </script>
+</body>
+
+</html>

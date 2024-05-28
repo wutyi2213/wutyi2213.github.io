@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Homework</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <button onclick="show()" type="button">show</button>
+        <br><br>
+    </form>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+    </table>
+
+    <script>
+        let i = 1;
+        function show() {
+
+            console.log(i);
+            let name = document.querySelector('#name').value;
+            let email = document.querySelector('#email').value;
+            console.log(name, email);
+            let tbody = document.querySelector('#tBody');
+
+            tbody.innerHTML += `<tr>
+                                <td>${i++}</td>
+                                <td>${name}</td>
+                                <td>${email}</td>
+                                </tr>`;
+        }
+    </script>
+</body>
+
+</html>

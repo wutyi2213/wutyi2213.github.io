@@ -22,7 +22,7 @@ body {
 .profile-name h1 {
     letter-spacing: 2px;
     font-size: 40px;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px #eb578f;
 }
 
 .profile-list {
@@ -61,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    color: #fff;
 }
 
 .title-work {

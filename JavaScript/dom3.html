@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+
+<body>
+
+    <!-- <ul id="ulID"><li id="one">Apple</li><li id="two">Orange</li><li id="three">Banana</li></ul> -->
+    <ul id="ulID">
+        <li id="one">Apple</li>
+        <li id="two">Orange</li>
+        <li id="three">Banana</li>
+    </ul>
+    <script>
+        let ulID = document.querySelector('#ulID');
+        console.log(ulID);
+
+        let first_child = ulID.firstChild;
+        console.log(first_child);
+
+        let last_child = ulID.lastChild;
+        console.log(last_child);
+
+        let next_sibling = first_child.nextSibling;
+        console.log(next_sibling);
+
+        let previous_sibling = last_child.previousSibling;
+        console.log(previous_sibling);
+
+        let first_element_child = ulID.firstElementChild;
+        console.log(first_element_child);
+
+        let last_element_child = ulID.lastElementChild;
+        console.log(last_element_child);
+
+        let next_element_sibling = first_element_child.nextElementSibling;
+        console.log(next_element_sibling);
+
+        let previous_element_sibling = next_element_sibling.previousElementSibling;
+        console.log(previous_element_sibling); 
+    </script>
+</body>
+
+</html>

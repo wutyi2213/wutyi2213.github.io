@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .navbar {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+            align-items: center;
+            background-color: white;
+            box-shadow: 3px 3px 7px #fff, 3px 3px 5px #b3b3b6;
+        }
+
+        .shop-name h2 {
+            margin-left: 50px;
+        }
+
+
+        .nav-menu {
+            position: relative;
+        }
+
+        .nav-menu ul {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            justify-content: end;
+            color: black;
+        }
+
+        .nav-menu ul li {
+            display: inline;
+            list-style-type: none;
+
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+
+        }
+
+        .nav-menu ul li a:hover {
+            background-color: steelblue;
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        .nav-menu span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 18px;
+            right: 12px;
+        }
+
+        /*first-row item start*/
+
+        .first-row {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 5px;
+            margin: 50px 55px 10px 85px;
+
+
+        }
+
+        .firstRow-item {
+            background-color: #fff;
+            border-radius: 10px;
+            /* img mr ma kyay buu out mr kway dr so img ko border-radius effect phyt chit yin overflow:hidden*/
+            overflow: hidden;
+            border: 1px solid rgb(219, 216, 216);
+            height: 350px;
+            width: 270px;
+        }
+
+        .firstRow-item img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .firstRow-item .content1 {
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .firstRow-item .content2 {
+            padding: 20px;
+            margin-top: 13px;
+        }
+
+        .firstRow-item .content3 {
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .firstRow-item .content4 {
+            padding: 20px;
+            margin-top: 38px;
+        }
+
+        .firstRow-item .title {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .firstRow-item .price {
+            font-size: 18px;
+
+            color: #000000;
+        }
+
+
+        /*Second-row start*/
+
+        .second-row {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 5px;
+            margin: 50px 55px 10px 85px;
+
+
+        }
+
+        .secondRow-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgb(219, 216, 216);
+            height: 350px;
+            width: 270px;
+        }
+
+        .secondRow-item img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .secondRow-item .content1 {
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+
+
+        .secondRow-item .content2 {
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .secondRow-item .content3 {
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .secondRow-item .content4 {
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .secondRow-item .title {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .secondRow-item .price {
+            font-size: 18px;
+
+            color: #000000;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blue;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .btn:hover {
+            background-color: steelblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="shop-name">
+            <h2>IT Shop</h2>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <a href="" id="count_item"><span>0</span></a>
+        </div>
+    </nav>
+
+    <div class="first-row">
+        <div class="firstRow-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/lap1.jpg" alt="" class="item-img" width="200px">
+            <div class="content1">
+                <p class="title">Laptop 1</p>
+                <p class="price">Price: 2300000 MMK</p>
+            </div>
+            <a href="" class="btn" class="addToCart" data-id="1" data-name="Laptop 1" data-price="2300000">Add to
+                Cart</a>
+        </div>
+
+        <div class="firstRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/lap2.jpg" alt="" class="item-img" width="200px">
+            <div class="content2">
+                <p class="title">Laptop 2</p>
+                <p class="price">Price: 2000000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="firstRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/lap3.jpg" alt="" class="item-img" width="200px">
+            <div class="content3">
+                <p class="title">Laptop 3</p>
+                <p class="price">Price: 1900000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="firstRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/lap4.jpg" alt="" class="item-img" width="200px">
+            <div class="content4">
+                <p class="title">Laptop 4</p>
+                <p class="price">Price: 1850000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+
+    <div class="second-row">
+        <div class="secondRow-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/ph1.jpg" alt="" class="item-img" width="200px">
+            <div class="content1">
+                <p class="title">iPhone 1</p>
+                <p class="price">Price: 3400000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="secondRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/ph2.jpg" alt="" class="item-img" width="200px">
+            <div class="content2">
+                <p class="title">iPhone 2</p>
+                <p class="price">Price: 3200000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="secondRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/ph3.webp" alt="" class="item-img" width="200px">
+            <div class="content3">
+                <p class="title">iPhone 3</p>
+                <p class="price">Price: 3100000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="secondRow-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/ph4.jpeg" alt="" class="item-img" width="200px">
+            <div class="content4">
+                <p class="title">iPhone 4</p>
+                <p class="price">Price: 3000000 MMK</p>
+            </div>
+            <a href="" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
