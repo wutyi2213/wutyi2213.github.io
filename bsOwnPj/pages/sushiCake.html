@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Counter</title>
+    <!-- link custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/sushiCake.css">
+
+
+    <link rel="stylesheet" href="../css/sushi-roll.css">
+    <link rel="stylesheet" href="../css/salmon.css">
+    <link rel="stylesheet" href="../css/donut.css">
+
+
+    <!-- favicon generator link -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- favicon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- link jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- jq counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<body>
+    <!-- navigation start -->
+
+    <nav class="navbar navbar-expand-md bg-dark text-danger py-3">
+        <div class="container">
+            <div class="logo ms-5">
+                <img src="../images/sushi-wallpaper.webp" alt="">
+            </div>
+            <a href="../index.html" class="navbar-brand">
+
+                <div class="waviy ms-3 fw-bold">
+                    <span style="--i:1" class="sushi">S</span>
+                    <span style="--i:2" class="sushi">U</span>
+                    <span style="--i:3" class="sushi">S</span>
+                    <span style="--i:4" class="sushi">H</span>
+                    <span style="--i:5" class="sushi">I</span>
+                    <span style="--i:6" class="sushi"> </span>
+                    <span style="--i:6" class="sushi"> </span>
+                    <span style="--i:7" class="counter">C</span>
+                    <span style="--i:8" class="counter">O</span>
+                    <span style="--i:9" class="counter">U</span>
+                    <span style="--i:10" class="counter">N</span>
+                    <span style="--i:11" class="counter">T</span>
+                    <span style="--i:12" class="counter">E</span>
+                    <span style="--i:13" class="counter">R</span>
+
+                </div>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon bg-light"><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase ">
+                    <li class="nav-item fw-bold px-2 ">
+                        <a href="../index.html" class="nav-link text-light mt-2">Home</a>
+                    </li>
+
+                    <li class="nav-item fw-bold px-2">
+                        <a href="#about" class="nav-link text-light mt-2">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-light fw-bold mt-2" href="#menu"
+                            data-bs-toggle="dropdown">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item mb-2" href="sushi-roll.html">Sushi Roll</a></li>
+                            <li><a class="dropdown-item mb-2" href="./donut-and-burger.html">Sushi Donut &
+                                    Burger</a></li>
+                            <li><a class="dropdown-item mb-2" href="salmon.html">Sashimi</a></li>
+                            <li><a class="dropdown-item mb-2" href="sushiCake.html">Sushi Cake</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item fw-bold px-2 mt-2">
+                        <a href="#service" class="nav-link text-light">Service</a>
+                    </li>
+
+
+
+                    <li class="nav-item fw-bold px-2 mt-2">
+                        <a href="#contact-about" class="nav-link text-light">Contact</a>
+                    </li>
+
+
+
+                    <form class="d-flex mx-3" role="search">
+                        <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+
+                    <li class="nav-item" class=" mx-3">
+                        <a href="cart.html" class="btn btn-light position-relative">
+                            <i class="fas fa-shopping-cart fa-2x mx-2"></i>
+                            <span
+                                class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger"
+                                id="count_item">0</span>
+                        </a>
+
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigation end -->
+
+    <!-- banner -->
+    <div class="grid col-lg">
+        <div class="content ms-3">
+            <div class="left-content col-md-6">
+                <div class="info">
+                    <h3 class="animate-charcter-eng">Sushi Counter</h3>
+                    <p class="info-slogan mt-3">ဆူရှီချစ်သူများအတွက်အကောင်းဆုံးရွေးချယ်ရာ <span
+                            class="animate-charcter-myan">ဆူရှီကောင်တာ</span> </p>
+                    <!-- <h1 class="py-3">
+                        <a href="" class="typewrite text-decoration-none text-dark" data-period="2000"
+                            data-type='[ "We serve for Best", "Founded since 1999", "Yangon,Myanmar" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1> -->
+                    <p class="info-text mt-3" class=""><span class="text-danger fw-bold">June</span>
+                        မွေးနေ့ရှင်လေးများ
+                        June လအတွင်း <span class="text-danger fw-bold animate-charcter-myan ">Birthday
+                            Cakes Items</span> တွေထဲမှ ကြိုက်ရာယူ
+                        <span class="text-danger fw-bold animate-charcter-myan">10% off</span>
+                    </p>
+
+
+                </div>
+
+                <button class="glow-on-hover mt-3 text-uppercase ms-5 mt-5" type="button">Order Now</button>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="right-content-sushi-cake">
+                        <img src="../images/wed7.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- delievery start -->
+    <div class="row mt-5 p-5" id="service">
+        <!-- popular one -->
+        <div class="col-lg-4 my-1">
+            <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour" data-bs-toggle="modal"
+                data-bs-target="#songOne">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/sushi-clock2.webp" class="img-fluid rounded-start" alt="popularImg1">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Opening Hour</h5>
+                            <p class="hour">10:00A.M To 10:00P.M</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- popular two -->
+
+        <div class="col-lg-4 my-1">
+            <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/delievery2.jpg" class="img-fluid rounded-start" alt="popularImg2">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Delievery Service Available</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- popular three -->
+        <div class="col-lg-4 my-1">
+            <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songThree">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/sushi-ph.png" class="img-fluid rounded-start" alt="popularImg3">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact</h5>
+                            <p class="contact">09383828877|0928732888</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- songOne Modal -->
+        <div class="modal fade" tabindex="-1" id="songOne">
+            <div class="modal-dialog song-modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body song-modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/NhWNsja3sPA?si=FtNmghndvMZbSijX"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- songTwo Modal -->
+
+        <div class="modal fade" tabindex="-1" id="songTwo">
+            <div class="modal-dialog song-modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body song-modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Y4nQg5Nf_Gc?si=JYZZ_mwrBfVb2T1y"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- songThree Modal -->
+        <div class="modal fade" tabindex="-1" id="songThree">
+            <div class="modal-dialog song-modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body song-modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/BncR6dvZuo4?si=-ym73bLAFtUVPkYl"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- popular sushi cake items start-->
+    <div class="sushi-cake-title" id="cake-menu-id">
+        <h3 class=" mb-5">Sushi Birthday Cake Menu</h3>
+
+
+
+    </div>
+    <div class="container sushi-cake-menu-items">
+        <div class="row ms-5 px-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake1.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 1 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$121</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="41"
+                        data-name="Sushi Cake Set 1" data-price="121"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake2.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 2 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$250</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="42"
+                        data-name="Sushi Cake Set 2" data-price="250"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake3.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 3 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$145</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="43"
+                        data-name="Sushi Cake Set 3" data-price="145"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake4.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 4 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$190</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="44"
+                        data-name="Sushi Cake Set 4" data-price="190"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake5.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 5 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$210</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="#" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="45"
+                        data-name="Sushi Cake Set 5" data-price="210"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/cake15.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 6 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$110</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="46"
+                        data-name="Sushi Cake Set 6" data-price="110"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake7.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 7 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$138</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="47"
+                        data-name="Sushi Cake Set 7" data-price="138"></i>
+
+                </a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake8.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 8 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$223</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="48"
+                        data-name="Sushi Cake Set 8" data-price="223"></i></a>
+
+            </div>
+
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake9.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 9 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$362</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="49"
+                        data-name="Sushi Cake Set 9" data-price="362"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/sushi-cake10.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 10 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$305</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="50"
+                        data-name="Sushi Cake Set 10" data-price="305"></i></a>
+
+            </div>
+
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/cake11.jpeg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 11 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$173</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="51"
+                        data-name="Sushi Cake Set 11" data-price="173"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake">
+                <img src="../images/cake14.webp" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-cake mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 12 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$107</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="52"
+                        data-name="Sushi Cake Set 12" data-price="107"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- wedding cake -->
+
+    <div class="sushi-wed-cake-title mt-5">
+        <h3 class=" mb-5">Wedding Cake Menu</h3>
+    </div>
+    <div class="container sushi-wed-menu-items">
+        <div class="row ms-5 px-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/sushi-wed1.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 1 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$121</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="41"
+                        data-name="Wedding Cake Set 1" data-price="121"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed12.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 2 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$250</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="42"
+                        data-name="Wedding Cake Set 2" data-price="250"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed10.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 3 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$345</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="43"
+                        data-name="Wedding Cake Set 3" data-price="345"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/sushi-wed4.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 4 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$190</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="44"
+                        data-name="Wedding Cake Set 4" data-price="190"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/sushi-wed5.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 5 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$210</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="#" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="45"
+                        data-name="Wedding Cake Set 5" data-price="210"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/sushi-wed6.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 6 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$110</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="46"
+                        data-name="Wedding Cake Set 6" data-price="110"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed8.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 7 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$438</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="47"
+                        data-name="Wedding Cake Set 7" data-price="438"></i>
+
+                </a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed6.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Wedding Cake Set 8 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$223</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="48"
+                        data-name="Wedding Cake Set 8" data-price="223"></i></a>
+
+            </div>
+
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed1.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 9 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$362</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="49"
+                        data-name="Sushi Cake Set 9" data-price="362"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed14.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 10 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$105</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="50"
+                        data-name="Sushi Cake Set 10" data-price="105"></i></a>
+
+            </div>
+
+
+        </div>
+
+        <div class="row ms-5 px-5 mt-5">
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed13.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 11 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$473</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="51"
+                        data-name="Sushi Cake Set 11" data-price="473"></i></a>
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed">
+                <img src="../images/wed5.jpg" class="mx-5" alt="">
+
+
+            </div>
+
+            <div class="col-md-3 sushi-wed mt-3">
+                <h5 class="ms-3 mb-2">Sushi Cake Set 12 </h5>
+                <h6 class="ms-3 mb-2 fw-bolder" style="color: #cf0000;">$507</h6>
+                <p class="ms-3 fw-bold">----------------</p>
+                <a href="" style="color: #1f1e1e;"> <i class="fa fa-cart-plus fa-2x ms-3 mt-2 addToCart " data-id="52"
+                        data-name="Sushi Cake Set 12" data-price="507"></i></a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- popular items end-->
+
+    <!-- meet our chef start -->
+    <div class="logo-container-about" id="chief">
+        <div class="waviy1 text-center">
+            <span style="--i:1">O</span>
+            <span style="--i:2">u</span>
+            <span style="--i:3">r</span>
+            <span style="--i:4"></span>
+            <span style="--i:5">C</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">e</span>
+            <span style="--i:8">f</span>
+            <span style="--i:9">s</span>
+        </div>
+    </div>
+
+    <!-- carosel chef -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center py-3 "
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/chef7.webp" alt="...">
+
+            </div>
+            <div class="carousel-item text-center py-3"
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/chef6.webp" alt="...">
+
+            </div>
+            <div class="carousel-item text-center py-3"
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/chef8.jpg" alt="...">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden ">Next</span>
+        </button>
+    </div>
+
+    <!-- meet our chef end -->
+
+    <!-- counter start  -->
+    <div class="counter-up">
+        <div class="counter-content">
+            <div class="box">
+                <div class="icon"><i class="fa fa-history"></i></div>
+                <div class="counter-num">12</div>
+                <div class="counter-text">Years</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-chess-rook"></i></div>
+                <div class="counter-num">197</div>
+                <div class="counter-text">Staffs</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-award"></i></div>
+                <div class="counter-num">50</div>
+                <div class="counter-text">Awards</div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa fa-users"></i></div>
+                <div class="counter-num">722436</div>
+                <div class="counter-text">Customers</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- counter end -->
+
+    <!--  customer reviews start -->
+    <div class="logo-container-about">
+        <h1 id="page-logo " class="text-center mt-5 pt-3">Testimonials</h1>
+    </div>
+
+    <div id="carouselExampleCaptionsTest" class="carousel slide mt-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptionsTest" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button " data-bs-target="#carouselExampleCaptionsTest" data-bs-slide-to="1"></button>
+            <button type="button " data-bs-target="#carouselExampleCaptionsTest" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center py-3 "
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/customer2.jfif" alt="...">
+                <h5 class="text-light mt-3">ဆူရှီစားတိုင်း မိုး အမြဲရွေးဖြစ်တဲ့ဆိုင်လေးပါ..အရသာလည်းကောင်း‌သလို service
+                    လည်းတအားကောင်းပါတယ် ...</h5>
+                <span class="text-light "><i class="fa-solid fa-star mt-3"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i></span>
+
+            </div>
+            <div class="carousel-item text-center py-3"
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/customer1.jpg" alt="...">
+                <h5 class="text-light mt-3">とても おいしいです.😋 そして雰囲気がいいレストレんです✨</h5>
+                <span class="text-light "><i class="fa-solid fa-star mt-3"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i></span>
+
+
+            </div>
+            <div class="carousel-item text-center py-3"
+                style="background-image: linear-gradient(to top, #1f1e1e 0%, #cf0000 90%);">
+                <img src="../images/customer3.jpg" alt="...">
+                <h5 class="text-light mt-3">ဝင့်ဝါ အကြိုက်ဆုံး ဆူရှီဆိုင်တွေထဲကတစ်ခုပါ</h5>
+                <span class="text-light "><i class="fa-solid fa-star mt-3"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i></span>
+
+
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptionsTest"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptionsTest"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden ">Next</span>
+        </button>
+    </div>
+    <!--  customer reviews end -->
+
+    <!-- map -->
+    <div class="logo-container-about " id="contact-about">
+        <h1 id="page-logo " class="text-center mt-5 pt-3">Contact</h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-6 px-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0939875140043!2d96.16178017419641!3d16.82169281885712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f6195f9acd%3A0xa6f009224c6a6bed!2sBahan%20Township!5e0!3m2!1sen!2smm!4v1717162140536!5m2!1sen!2smm"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class="col-lg-6" class="form-filling">
+            <form action="">
+                <div class="mb-3">
+                    <label for="name" class="form-name">Name</label>
+                    <input type="text" name="name " id="name" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="Message" class="form-review">Review</label>
+                    <textarea name="message" id="message" class="form-control"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-dark form-button" type="button">Send</button>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- footer  -->
+    <footer class=" ">
+        <div class="row" class="footer-row">
+            <div class="col" class="footer-first-col">
+                <img src="..//images/sushi-wallpaper-real.jpg" class="logo-footer" alt="">
+                <p class="mt-2 footer-sushi-counter ms-5">Sushi Counter</p>
+                <p class="mt-2 mb-2 ms-5">ဆူရှီချစ်သူများအတွက်</p>
+                <p class="ms-5">အကောင်းဆုံး ရွေးချယ်ရာ</p>
+            </div>
+
+            <div class="col" class="footer-third-col">
+                <h5 class="mt-2">Links</h5>
+                <ul class="footer-third-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="#cake-menu-id">Menu</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#service">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col" class="footer-sec-col">
+                <h5 class="mt-2">Branches</h5>
+                <p class="mb-2">In Yangon</p>
+                <p>Branch(1) 2 <sup>nd</sup> floor,Yankin Shopping Center</p>
+                <p>Branch(2) Sayar San Road at Baham Township</p>
+                <p class="mt-2">In Mandalay ~ Opening Soon</p>
+
+
+            </div>
+
+            <div class="col" class="footer-fourth-col ">
+                <h5 class="mt-2">Subscribe</h5>
+                <form action="" class="footer-form mt-3">
+                    <i class="far fa-envelop"></i>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+                <div class="footer-icons mt-3">
+                    <a href=""><i class="fa-brands fa-facebook mx-2"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube mx-2"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter mx-2"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram mx-2"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok mx-2"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="mt-2">
+        <hr>
+        <p class="footer-copyright d-flex align-item-center justify-content-center mt-3">All rights Reserved &copy;
+            Design by
+            <b class="ms-2"> Rosy</b>
+        </p><br>
+
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- link js bootstrap -->
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+
+
+
+    <!-- js link -->
+    <script src="../js/typewriter.js"></script>
+
+    <script src="../js/t.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".counter-num").counterUp({
+                delay: 10,
+                time: 1200
+            });
+
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

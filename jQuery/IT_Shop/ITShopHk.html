@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop </title>
+    <!-- link to bs css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- link to bs js -->
+    <link rel="stylesheet" href="./bootstrap/js/bootstrap.bundle.js">
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">IT Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="checkout.html" class="btn btn-primary position-relative">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                id="count_item">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/lap1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Laptop 1</h5>
+                        <p class="cart-text">Price: 2300000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="1" data-name="Laptop 1" data-price="2300000">Add
+                            to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/lap2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Laptop 2</h5>
+                        <p class="cart-text">Price: 2000000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="2" data-name="Laptop 2" data-price="2000000">Add
+                            to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/lap3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Laptop 3</h5>
+                        <p class="cart-text">Price: 2800000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="3" data-name="Laptop 3" data-price="2800000">Add
+                            to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/lap4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Laptop 4</h5>
+                        <p class="cart-text">Price: 4300000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="4" data-name="Laptop 4" data-price="4300000">Add
+                            to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/ph1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Phone 1</h5>
+                        <p class="cart-text">Price: 3400000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="5" data-name="Phone 1" data-price="3400000">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/ph2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Phone 2</h5>
+                        <p class="cart-text">Price: 3200000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="6" data-name="Phone 2" data-price="3200000">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/ph3.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Phone 3</h5>
+                        <p class="cart-text">Price: 3100000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="7" data-name="Phone 3" data-price="3100000">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="./images/ph4.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="cart-title">Phone 4</h5>
+                        <p class="cart-text">Price: 3000000 MMK</p>
+                        <a class="btn btn-primary addToCart" data-id="8" data-name="Phone 4" data-price="3000000">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./jquery.min.js"></script>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

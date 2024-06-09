@@ -1,0 +1,121 @@
+
+
+
+.right-content-sushi-cake img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateZ(-10deg);
+    }
+
+    100% {
+        transform: rotateZ(290deg);
+    }
+
+}
+
+
+.sushi-cake-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sushi-cake-title h3 {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.sushi-cake-title h3::before {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 3px;
+    background-color: #cf0000;
+    bottom: 2;
+    left: 2%;
+
+}
+
+
+/* sushi-cake-menu-items */
+.sushi-cake-menu-items {
+    font-family: 'Alfa Slab One', cursive;
+    ;
+}
+
+
+.sushi-cake img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+
+.right-content-sushi-cake img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    animation: rotate1 3s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(50deg);
+    }
+
+}
+
+
+.sushi-wed-cake-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sushi-wed-cake-title h3 {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.sushi-wed-cake-title h3::before {
+    content: "";
+    position: absolute;
+    width: 272px;
+    height: 3px;
+    background-color: #cf0000;
+    bottom: 2;
+    left: 2%;
+
+}
+
+
+/* sushi-cake-menu-items */
+.sushi-wed-menu-items {
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+
+.sushi-wed img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 20px 20px 20px;
+}
