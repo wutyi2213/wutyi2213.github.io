@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../css/sushi-roll.css">
     <link rel="stylesheet" href="../css/donut.css">
     <link rel="stylesheet" href="../css/sushiCake.css">
+
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 
     <!-- link to css cart -->
@@ -143,8 +146,8 @@
     </nav>
 
     <!-- banner -->
-    <div class="grid col-lg mb-5    ">
-        <div class="content ms-3">
+    <div class="grid col-lg mb-5">
+        <div class="content ms-3" data-aos="zoom-in-out" data-aos-duration="2000">
             <div class="left-content col-md-6">
                 <div class="info">
                     <h3 class="animate-charcter-eng">Sushi Counter</h3>
@@ -182,7 +185,7 @@
 
 
     <!-- delievery start -->
-    <div class="row mt-5 p-5" id="service">
+    <div class="row mt-5 p-5" id="service" data-aos="zoom-in-up">
         <!-- popular one -->
         <div class="col-lg-4 my-1">
             <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour" data-bs-toggle="modal"
@@ -303,9 +306,6 @@
 
     </div>
 
-
-
-
     <!-- table -->
     <div class="container my-5">
         <table border="3" cellspacing="0" cellpadding="50" class="table-bordered m-auto">
@@ -334,7 +334,7 @@
 
 
     <!-- meet our chef start -->
-    <div class="logo-container-about" id="chief">
+    <div class="logo-container-about" id="chief" >
         <div class="waviy1 text-center">
             <span style="--i:1">O</span>
             <span style="--i:2">u</span>
@@ -349,7 +349,7 @@
     </div>
 
     <!-- carosel chef -->
-    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-aos="zoom-in-up">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                 class="active"></button>
@@ -385,7 +385,6 @@
         </button>
     </div>
 
-
     <!-- meet our chef end -->
 
     <!-- counter start  -->
@@ -415,16 +414,14 @@
 
         </div>
     </div>
-
     <!-- counter end -->
-
 
     <!--  customer reviews start -->
     <div class="logo-container-about" id="about">
         <h1 id="page-logo " class="text-center mt-5 pt-3">Testimonials</h1>
     </div>
 
-    <div id="carouselExampleCaptionsTest" class="carousel slide mt-5">
+    <div id="carouselExampleCaptionsTest" class="carousel slide mt-5" data-aos="zoom-in-down">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsTest" data-bs-slide-to="0"
                 class="active"></button>
@@ -481,7 +478,7 @@
     <div class="logo-container-about " id="contact-about">
         <h1 id="page-logo " class="text-center mt-5 pt-3">Contact</h1>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5" data-aos="fade-up">
         <div class="col-lg-6 px-5">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0939875140043!2d96.16178017419641!3d16.82169281885712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f6195f9acd%3A0xa6f009224c6a6bed!2sBahan%20Township!5e0!3m2!1sen!2smm!4v1717162140536!5m2!1sen!2smm"
@@ -515,8 +512,6 @@
         </div>
 
     </div>
-
-
 
     <!-- footer with four columns -->
     <footer class=" ">
@@ -577,6 +572,15 @@
         </p><br>
 
     </footer>
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+    </script>
 
 
 

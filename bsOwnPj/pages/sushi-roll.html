@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../css/donut.css">
     <link rel="stylesheet" href="../css/sushi-roll.css">
 
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- favicon generator link -->
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
@@ -134,7 +137,7 @@
 
     <!-- banner -->
     <div class="grid col-lg">
-        <div class="content ms-3">
+        <div class="content ms-3" data-aos="zoom-in-out" data-aos-duration="2000">
             <div class="left-content col-md-6">
                 <div class="info">
                     <h3 class="animate-charcter-eng">Sushi Counter</h3>
@@ -168,10 +171,8 @@
         </div>
     </div>
 
-
-
     <!-- delievery start -->
-    <div class="row mt-5 p-5" id="service-id">
+    <div class="row mt-5 p-5" id="service-id" data-aos="zoom-in-up">
         <!-- popular one -->
         <div class="col-lg-4 my-1">
             <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour" data-bs-toggle="modal"
@@ -299,12 +300,8 @@
 
     </div>
 
-
-
-
-
     <!--  sushi roll items start-->
-    <div class="sushi-roll-main" id="sushi-roll-menu-id">
+    <div class="sushi-roll-main" id="sushi-roll-menu-id" data-aos="fade-down" data-aos-duration="3000">
         <div class="sushi-roll-title">
             <h3 class="text-capitalize mb-5">Sushi Roll Menu</h3>
 
@@ -487,11 +484,7 @@
         </div>
 
     </div>
-
-
-
     <!-- sushi  roll items end-->
-
 
     <!-- meet our chef start -->
     <div class="logo-container-about" id="chief">
@@ -509,7 +502,7 @@
     </div>
 
     <!-- carosel chef -->
-    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-aos="fade-up">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                 class="active"></button>
@@ -545,7 +538,6 @@
         </button>
     </div>
 
-
     <!-- meet our chef end -->
 
     <!-- counter start  -->
@@ -577,14 +569,12 @@
     </div>
 
     <!-- counter end -->
-
-
     <!--  customer reviews start -->
     <div class="logo-container-about" id="about">
         <h1 id="page-logo " class="text-center mt-5 pt-3">Testimonials</h1>
     </div>
 
-    <div id="carouselExampleCaptionsTest" class="carousel slide mt-5">
+    <div id="carouselExampleCaptionsTest" class="carousel slide mt-5" data-aos="fade-up">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsTest" data-bs-slide-to="0"
                 class="active"></button>
@@ -636,12 +626,11 @@
     </div>
     <!--  customer reviews end -->
 
-
     <!-- map -->
     <div class="logo-container-about " id="contact-about">
         <h1 id="page-logo " class="text-center mt-5 pt-3">Contact</h1>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5" data-aos="fade-down">
         <div class="col-lg-6 px-5">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0939875140043!2d96.16178017419641!3d16.82169281885712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f6195f9acd%3A0xa6f009224c6a6bed!2sBahan%20Township!5e0!3m2!1sen!2smm!4v1717162140536!5m2!1sen!2smm"
@@ -676,14 +665,7 @@
 
     </div>
 
-
-
-
-
-
     <!-- footer  -->
-
-
     <footer class=" ">
         <div class="row" class="footer-row">
             <div class="col" class="footer-first-col">
@@ -745,11 +727,16 @@
 
     <!-- footer end -->
 
-
-
-
     <!-- link js bootstrap -->
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+    </script>
 
 
 
