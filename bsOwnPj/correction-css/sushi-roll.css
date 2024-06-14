@@ -1,0 +1,52 @@
+.sushi-roll-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sushi-roll-title h3 {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Alfa Slab One', cursive;
+    cursor: pointer;
+}
+
+.sushi-roll-title h3::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 3px;
+    background-color: #cf0000;
+    bottom: 2;
+    left: 2%;
+}
+
+/* menu */
+
+.sushi-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.single-sushi-roll-menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.single-sushi-roll-menu img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+
+    border: 1px dashed #cf0000;
+
+    /* margin-right: 15px; */
+}

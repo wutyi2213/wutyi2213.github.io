@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Counter</title>
+    <!-- link custom css -->
+    <link rel="stylesheet" href="./index-style.css">
+
+
+    <link rel="stylesheet" href="../correction-css/sushi-roll.css">
+
+    <link rel="stylesheet" href="../correction-css/donut-and-burger.css">
+    <link rel="stylesheet" href="../correction-css/sashimi.css">
+    <link rel="stylesheet" href="../correction-css/sushi-cake.css">
+    <!-- link to cart -->
+    <link rel="stylesheet" href="../correction-css/cart.css">
+
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon generator link -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- favicon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- link to splide css-->
+    <link rel="stylesheet" href="../splide/css/splide.min.css">
+
+
+    <!-- link jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- jq counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<body>
+    <!-- navigation start -->
+
+    <nav class="navbar navbar-expand-lg bg-dark ">
+        <div class="container-fluid ps-lg-5">
+            <div class="logo">
+                <img src="../images/sushi-wallpaper.webp" alt="">
+            </div>
+
+            <a href="./index.html" class="navbar-brand">
+
+                <div class="waviy fw-bold">
+                    <span style="--i:1" class="sushi">S</span>
+                    <span style="--i:2" class="sushi">U</span>
+                    <span style="--i:3" class="sushi">S</span>
+                    <span style="--i:4" class="sushi">H</span>
+                    <span style="--i:5" class="sushi">I</span>
+                    <span style="--i:6" class="sushi"> </span>
+                    <span style="--i:6" class="sushi"> </span>
+                    <span style="--i:7" class="counter">C</span>
+                    <span style="--i:8" class="counter">O</span>
+                    <span style="--i:9" class="counter">U</span>
+                    <span style="--i:10" class="counter">N</span>
+                    <span style="--i:11" class="counter">T</span>
+                    <span style="--i:12" class="counter">E</span>
+                    <span style="--i:13" class="counter">R</span>
+
+                </div>
+            </a>
+
+            <button class="navbar-toggler  bg-light" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon bg-light mt-2"><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-2   text-uppercase">
+                    <li class="nav-item fw-bold  pt-3">
+                        <a href="./index.html" class="nav-link text-decoration-none text-light">Home</a>
+                    </li>
+
+                    <li class="nav-item fw-bold pt-3">
+                        <a href="./index.html" class="nav-link text-decoration-none text-light">About</a>
+                    </li>
+
+                    <li class="nav-item fw-bold ">
+                        <div class="dropdown fw-bold pt-3">
+                            <a class="nav-link text-light   dropdown-toggle menu-nav" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu menu-list-nav fw-bold">
+                                <a href="../correction-pages/sushi-roll.html">
+                                    <li><button class="dropdown-item " type="button">Sushi Roll</button></li>
+                                </a>
+                                <a href="../correction-pages/donut-and-burger.html">
+                                    <li><button class="dropdown-item" type="button">Sushi Donut &
+                                            Burger</button></li>
+                                </a>
+                                <a href="../correction-pages/sashimi.html">
+                                    <li><button class="dropdown-item" type="button">Sashimi</button></li>
+                                </a>
+
+                                <a href="../correction-pages/sushi-cake.html">
+                                    <li><button class="dropdown-item" type="button">Sushi Cake</button></li>
+                                </a>
+
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item fw-bold pt-3">
+                        <a href="#service" class="nav-link text-light">Service</a>
+                    </li>
+
+                    <li class="nav-item fw-bold pt-3 ">
+                        <a href="#contact-about" class="nav-link text-light mb-2">Contact</a>
+                    </li>
+
+                    <li class="nav-item fw-bold  pt-3">
+                        <div class="container-fluid p-0 mb-3">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-danger" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+
+                    <li class="nav-item ms-2 ps-2 pt-3">
+                        <a href="cart.html" class="text-light  text-decoration-none  position-relative"
+                            class="mb-5 px-1">
+                            <i class="fa-solid fa-cart-plus fa-2x"></i>
+                            <span
+                                class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger fw-bolder"
+                                id="count_item">0</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigation end -->
+
+    <!-- banner start-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h3 class="animate-charcter-eng ms-5">Sashimi Items</h3>
+
+                <p class="info-text mt-3 ms-5">အမိုက်စား decorations ‌အကောင်းဆုံး အရသာတွေကို ချစ်ရသူတွေနဲ့တူတူ
+                    ခံစားဖို့ <span class="animate-charcter-myan"> sushi counter</span> မှာ date ကြစို့</p>
+                <p class="info-slogan mt-3 ms-5">ဆူရှီချစ်သူများအတွက်အကောင်းဆုံးရွေးချယ်ရာ <span
+                        class="animate-charcter-myan mt-3">ဆူရှီကောင်တာ</span> </p>
+                <a href="../correction-pages/cart.html">
+                    <button class="glow-on-hover mt-3 text-uppercase ms-5 mb-5" type="button">Order Now</button>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-12 right-content mt-5  ">
+                <img src="../images/sashimi24.jpg" class="img-fluid ms-5" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- table -->
+    <!-- table -->
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <table border="3" cellspacing="0" cellpadding="10" class="table-bordered m-auto">
+                    <thead>
+                        <tr>
+                            <th class=" px-5 voucher">No.</th>
+                            <th class=" px-5 voucher">Item Name</th>
+                            <th class=" px-5 voucher">Item Price($)</th>
+                            <th class=" px-5 voucher">Item Quantity</th>
+                            <th class=" px-5 voucher">Sub Total ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemTbody">
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+
+
+        <button class="btn btn-danger confirm_button" id="order_now">Order Now</button>
+
+    </div>
+
+
+    <!-- delievery start -->
+    <div class="container-fluid">
+        <div class="row mt-5 p-5" id="service" data-aos="fade-down">
+            <!-- popular one -->
+            <div class="col-lg-4 my-1 col-sm-12">
+                <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour" data-bs-toggle="modal"
+                    data-bs-target="#songOne">
+                    <div class="row g-0">
+                        <div class="col-md-4 ">
+                            <img src="../images/sushi-clock2.webp" class="img-fluid rounded-start" alt="popularImg1">
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center ">
+                            <div class="card-body ">
+                                <h5 class="card-title align-items-center">Opening Hour</h5>
+                                <p class="hour align-items-center">10:00A.M To 10:00P.M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- popular two -->
+
+            <div class="col-lg-4 my-1 col-sm-12">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/delievery2.jpg" class="img-fluid rounded-start" alt="popularImg2">
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Delievery Service </h5>
+                                <p class="contact">09383828877|0928732888</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- popular three -->
+            <div class="col-lg-4 my-1 col-sm-12">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songThree">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/sushi-ph.png" class="img-fluid rounded-start" alt="popularImg3">
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Contact</h5>
+                                <p class="contact">09383828877|0928732888</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- songOne Modal -->
+            <div class="modal fade" tabindex="-1" id="songOne">
+                <div class="modal-dialog song-modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body song-modal-body">
+                            <div class="ratio ratio-16x9">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- songTwo Modal -->
+
+            <div class="modal fade" tabindex="-1" id="songTwo">
+                <div class="modal-dialog song-modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body song-modal-body">
+                            <div class="ratio ratio-16x9">
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- songThree Modal -->
+            <div class="modal fade" tabindex="-1" id="songThree">
+                <div class="modal-dialog song-modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body song-modal-body">
+                            <div class="ratio ratio-16x9">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- meet our chef start -->
+    <div class="container-fluid logo-container-about mt-5" id="chief">
+        <div class="waviy1 text-center">
+            <span style="--i:1">O</span>
+            <span style="--i:2">u</span>
+            <span style="--i:3">r</span>
+            <span style="--i:4"></span>
+            <span style="--i:5">C</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">e</span>
+            <span style="--i:8">f</span>
+            <span style="--i:9">s</span>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 mb-5 pb-3">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-12 col-md-12 col-sm-12  ">
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track"
+                        style="background-image: linear-gradient(to top, #252525 0%, #8d0404 90%);">
+                        <ul class="splide__list">
+                            <li class="splide__slide ps-lg-5 ">.
+                                <div class="hovereffect">
+                                    <img class="img-responsive img-fluid chef1-img" src="../images/chef1.png" alt="">
+                                    <div class="overlay">
+                                        <h2 class="fw-bold"> </h2>
+                                        <p class="set1">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook text-danger fw-bolder"></i>
+                                            </a>
+
+
+
+                                        </p>
+                                        <hr>
+                                        <hr>
+                                        <p class="set2">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-messenger text-danger fw-bolder"></i>
+                                            </a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect">
+                                    <img class="img-responsive img-fluid chef1-img" src="../images/gc1.png" alt="">
+                                    <div class="overlay">
+                                        <h2 class="fw-bold"> </h2>
+                                        <p class="set1">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook text-danger fw-bolder"></i>
+                                            </a>
+
+
+
+                                        </p>
+                                        <hr>
+                                        <hr>
+                                        <p class="set2">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-messenger text-danger fw-bolder"></i>
+                                            </a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect">
+                                    <img class="img-responsive img-fluid chef1-img" src="../images/mc.png" alt="">
+                                    <div class="overlay">
+                                        <h2 class="fw-bold"> </h2>
+                                        <p class="set1">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook text-danger fw-bolder"></i>
+                                            </a>
+
+
+
+                                        </p>
+                                        <hr>
+                                        <hr>
+                                        <p class="set2">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-messenger text-danger fw-bolder"></i>
+                                            </a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- meet our chef end -->
+
+
+    <!-- counter start  -->
+    <div class="container-fluid counter-up mt-5 ">
+        <div class="row counter-content">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box " style="border: 1px dashed #fff;">
+                <div class="icon "><i class="fa fa-history "></i></div>
+                <div class="counter-num fw-bolder ">12</div>
+                <div class="counter-text">Years</div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
+                <div class="icon"><i class="fa fa-chess-rook"></i></div>
+                <div class="counter-num">197</div>
+                <div class="counter-text">Staffs</div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
+                <div class="icon"><i class="fa fa-users"></i></div>
+                <div class="counter-num">722436</div>
+                <div class="counter-text">Customers</div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
+                <div class="icon"><i class="fa fa-award"></i></div>
+                <div class="counter-num">50</div>
+                <div class="counter-text">Awards</div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- counter end -->
+
+    <!--  customer reviews start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="logo-container-about" id="about">
+                    <h1 id="page-logo " class="text-center mt-5">Testimonials</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 mb-5 pb-3">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-12 col-md-12 col-sm-12  ">
+                <section class="splide1" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track"
+                        style="background-image: linear-gradient(to top, #252525 0%, #8d0404 90%);">
+                        <ul class="splide__list">
+                            <li class="splide__slide ps-lg-5 ">.
+                                <div class="hovereffect1">
+                                    <img class="img-responsive img-fluid" src="../images/customer1.jpg" alt="">
+                                    <div class="overlay1">
+                                        <h2>とても おいしいです.😋 そして雰囲気がいいレストレんです✨</h2>
+                                        <a class="info1" href="#"><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect1">
+                                    <img class="img-responsive img-fluid" src="../images/customer2.jfif" alt="">
+                                    <div class="overlay1">
+                                        <h2>ဆူရှီစားတိုင်း မိုး
+                                            အမြဲရွေးဖြစ်တဲ့ဆိုင်လေး
+                                        </h2>
+                                        <a class="info1" href="#"><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect1">
+                                    <img class="img-responsive img-fluid" src="../images/customer4.jpg" alt="">
+                                    <div class="overlay1">
+                                        <h2>Best Forever</h2>
+                                        <a class="info1" href="#"><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect1">
+                                    <img class="img-responsive img-fluid" src="../images/customer3.jpg" alt="">
+                                    <div class="overlay1">
+                                        <h2>ဝင့်ဝါ အကြိုက်ဆုံး ဆူရှီဆိုင်တွေထဲကတစ်ခုပါ</h2>
+                                        <a class="info1" href="#"><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide ps-lg-5">.
+                                <div class="hovereffect1">
+                                    <img class="img-responsive img-fluid" src="../images/customer3.jpg" alt="">
+                                    <div class="overlay1">
+                                        <h2>Hover effect 4</h2>
+                                        <a class="info1" href="#">link here</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!--  customer reviews end -->
+
+
+
+    <!-- map -->
+    <div class="container-fluid">
+        <div class="logo-container-about " id="contact-about" data-aos="fade-down">
+            <h1 id="page-logo " class="text-center mt-3 ">Contact</h1>
+        </div>
+        <div class="row mt-5" data-aos="fade-down">
+            <div class="col-lg-6 px-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0939875140043!2d96.16178017419641!3d16.82169281885712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f6195f9acd%3A0xa6f009224c6a6bed!2sBahan%20Township!5e0!3m2!1sen!2smm!4v1717162140536!5m2!1sen!2smm"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="col-lg-6" class="form-filling">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="name" class="form-name">Name</label>
+                        <input type="text" name="name " id="name" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="Message" class="form-review">Review</label>
+                        <textarea name="message" id="message" class="form-control"></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-dark form-button" type="button">Send</button>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- footer with four columns -->
+
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row" class="footer-row ">
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3" class="footer-first-col">
+                    <img src="../images/sushi-wallpaper-real.jpg" class="logo-footer ms-lg-5 mt-3" alt="">
+                    <p class="mt-2 footer-sushi-counter ms-lg-5">Sushi Counter</p>
+                    <p class="mt-2 mb-2 ms-lg-5">ဆူရှီချစ်သူများအတွက်</p>
+                    <p class=" ms-lg-5">အကောင်းဆုံး ရွေးချယ်ရာ</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3" class="footer-sec-col">
+                    <h5 class="mt-2">Branches</h5>
+                    <p class="mb-2">In Yangon</p>
+                    <p>Branch(1) 2 <sup>nd</sup> floor,Yankin Shopping Center</p>
+                    <p>Branch(2) Sayar San Road at Baham Township</p>
+                    <p class="mt-2">In Mandalay ~ Opening Soon</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ps-lg-5 mt-3" class="footer-third-col">
+                    <h5 class="mt-2 ">Links</h5>
+                    <ul class="footer-third-links p-0 ">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./index.html">Menu</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#contact-about">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3" class="footer-fourth-col ">
+                    <h5 class="mt-2 ">Subscribe</h5>
+                    <div class="container-fluid form-footer">
+                        <form class="d-flex " role="search">
+                            <input class="form-control me-2" type="search" placeholder="Enter your mail"
+                                aria-label="Search">
+                            <button class="btn btn-outline-dark text-light" type="submit">Submit</button>
+                        </form>
+                        <div class="footer-icons mt-3">
+                            <a href=""><i class="fa-brands fa-facebook mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="footer-copyright d-flex align-item-center justify-content-center mt-3">All rights Reserved &copy;
+            Design by
+            <a href="" class="text-decoration-none text-light"><b class="ms-2" style="cursor: pointer;"> Rosy</b></a>
+        </p><br>
+    </footer>
+
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <!-- link js bootstrap -->
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- link to splide js -->
+    <script src="../splide/js/splide.min.js"></script>
+
+    <!-- js link -->
+    <script src="../js/typewriter.js"></script>
+    <script src="../js/t.js"></script>
+    <script>
+
+        AOS.init();
+
+
+    </script>
+
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            focus: 'center',
+        });
+
+        splide.mount();
+
+        var splide1 = new Splide1('.splide1', {
+            type: 'loop',
+            padding: '5rem',
+        });
+
+        splide1.mount();
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <script>
+
+
+        $(document).ready(function () {
+            $(".counter-num").counterUp({
+                delay: 10,
+                time: 1200
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>
