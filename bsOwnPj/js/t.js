@@ -148,7 +148,7 @@ $(document).ready(function () {
         let ans = confirm('Are you sure to order now');
         if (ans) {
             localStorage.removeItem('shops');
-            window.location.href = '../index.html';
+            window.location.href = '../correction-pages/index.html';
         }
 
     });
