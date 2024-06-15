@@ -95,13 +95,21 @@
                                 Menu
                             </a>
                             <ul class="dropdown-menu  fw-bold">
-                                <a href="../correction-pages/sushi-roll.html" class="text-decoration-none"><li><button class="dropdown-item " type="button">Sushi Roll</button></li></a>
-                                <a href="../correction-pages/donut-and-burger.html" class="text-decoration-none"><li><button class="dropdown-item" type="button">Sushi Donut &
-                                    Burger</button></li></a>
-                                <a href="../correction-pages/sashimi.html" class="text-decoration-none"><li><button class="dropdown-item" type="button">Sashimi</button></li></a>
-                                
-                                <a href="../correction-pages/sushi-cake.html" class="text-decoration-none"><li><button class="dropdown-item" type="button">Sushi Cake</button></li></a>
-                                
+                                <a href="../correction-pages/sushi-roll.html" class="text-decoration-none">
+                                    <li><button class="dropdown-item " type="button">Sushi Roll</button></li>
+                                </a>
+                                <a href="../correction-pages/donut-and-burger.html" class="text-decoration-none">
+                                    <li><button class="dropdown-item" type="button">Sushi Donut &
+                                            Burger</button></li>
+                                </a>
+                                <a href="../correction-pages/sashimi.html" class="text-decoration-none">
+                                    <li><button class="dropdown-item" type="button">Sashimi</button></li>
+                                </a>
+
+                                <a href="../correction-pages/sushi-cake.html" class="text-decoration-none">
+                                    <li><button class="dropdown-item" type="button">Sushi Cake</button></li>
+                                </a>
+
                             </ul>
                         </div>
 
@@ -125,8 +133,8 @@
                     </li>
 
                     <li class="nav-item ms-2 ps-2 pt-3">
-                        <a href="../correction-pages/cart.html" class="text-light  text-decoration-none  position-relative"
-                            class="mb-5 px-1">
+                        <a href="../correction-pages/cart.html"
+                            class="text-light  text-decoration-none  position-relative" class="mb-5 px-1">
                             <i class="fa-solid fa-cart-plus fa-2x"></i>
                             <span
                                 class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger fw-bolder"
@@ -167,8 +175,7 @@
         <div class="row mt-5 p-5" id="service" data-aos="fade-down">
             <!-- popular one -->
             <div class="col-lg-4 my-1 col-sm-12">
-                <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour" data-bs-toggle="modal"
-                    data-bs-target="#songOne">
+                <div class="card btn p-0 bg-dark text-light mb-3" class="opening-hour">
                     <div class="row g-0">
                         <div class="col-md-4 ">
                             <img src="../images/sushi-clock2.webp" class="img-fluid rounded-start" alt="popularImg1">
@@ -187,7 +194,7 @@
             <!-- popular two -->
 
             <div class="col-lg-4 my-1 col-sm-12">
-                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                <div class="card btn p-0 bg-dark text-light mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="../images/delievery2.jpg" class="img-fluid rounded-start" alt="popularImg2">
@@ -205,7 +212,7 @@
 
             <!-- popular three -->
             <div class="col-lg-4 my-1 col-sm-12">
-                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songThree">
+                <div class="card btn p-0 bg-dark text-light mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="../images/sushi-ph.png" class="img-fluid rounded-start" alt="popularImg3">
@@ -222,54 +229,6 @@
 
             </div>
 
-            <!-- songOne Modal -->
-            <div class="modal fade" tabindex="-1" id="songOne">
-                <div class="modal-dialog song-modal-dialog">
-                    <div class="modal-content">
-
-                        <div class="modal-body song-modal-body">
-                            <div class="ratio ratio-16x9">
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- songTwo Modal -->
-
-            <div class="modal fade" tabindex="-1" id="songTwo">
-                <div class="modal-dialog song-modal-dialog">
-                    <div class="modal-content">
-
-                        <div class="modal-body song-modal-body">
-                            <div class="ratio ratio-16x9">
-
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- songThree Modal -->
-            <div class="modal fade" tabindex="-1" id="songThree">
-                <div class="modal-dialog song-modal-dialog">
-                    <div class="modal-content">
-
-                        <div class="modal-body song-modal-body">
-                            <div class="ratio ratio-16x9">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
@@ -359,61 +318,56 @@
     <div class="container-fluid ">
         <div class="row mt-3 ms-lg-0 ms-md-0">
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card mt-3">
 
                     <img src="../images/onigiri-set2-new.jpg" class="img-fluid card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body index-add">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Onigiri</h5>
                         <h6 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">5$</h6>
-
-                        <a href="./cart.html" class="addToCart" data-id="68" data-name="Onigiri" data-price="5"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="68" data-name="Onigiri"
+                            data-price="5">Order</a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/avo3.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sushi Cake</h5>
                         <h6 class="card-title fw-bold mt-2 text-center" style="color: #cf0000;">8$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="66" data-name="Sushi Cake"
+                            data-price="8">Order</a>
 
-                        <a href=" " class="addToCart" data-id="66" data-name="Sushi Cake" data-price="8"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/avo4.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Egg roll</h5>
                         <h6 class="card-title  text-center fw-bold mt-2" style="color: #cf0000;">6$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="67" data-name="Egg roll"
+                            data-price="6">Order</a>
 
-                        <a href="./cart.html " class="addToCart" data-id="67" data-name="Egg roll" data-price="6"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/donut4.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sushi Donut</h5>
                         <h6 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">25$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="69" data-name="Sushi Donut"
+                            data-price="25">Order</a>
 
-                        <a href="./cart.html " class="addToCart" data-id="68" data-name="Sushi Donut" data-price="25"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
@@ -426,61 +380,57 @@
     <div class="container-fluid ">
         <div class="row mt-3 ms-lg-0 ms-md-0">
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/donut2.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sashimi Set1</h5>
                         <h6 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">23$</h6>
+                        <a class="btn btn-dark  addToCart mx-lg-0 mx-sm-2 mt-3 pt-3" data-id="70"
+                            data-name="Sashimi Set 1" data-price="23">Order</a>
 
-                        <a href=" " class="addToCart mx-lg-0 mx-sm-2" data-id="71" data-name="Sashimi Set 1"
-                            data-price="23"><button class="glow-on-hover-buy mt-3" type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/fire2.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Fire Sushi</h5>
                         <h6 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">11$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="71" data-name="Fire Sushi"
+                            data-price="11">Order</a>
 
-                        <a href=" " class="addToCart " data-id="70" data-name="Fire Sushi" data-price="11"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/sushi-wed1.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sashimi Set1</h5>
-                        <h6 class="card-title  text-center fw-bold mt-2" style="color: #cf0000;">23$</h6>
+                        <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Wedding Set 1</h5>
+                        <h6 class="card-title  text-center fw-bold mt-2" style="color: #cf0000;">121$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="72" data-name="Sashimi Set1"
+                            data-price="121">Order</a>
 
-                        <a href=" " class="addToCart" data-id="67" data-name="Egg roll" data-price="23"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 ps-3" class="menu-popular-items-col">
-                <div class="card my-3">
+                <div class="card my-3 index-add">
 
                     <img src="../images/donut4.jpg" class="img-fluid card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Wedding Set 1</h5>
+                        <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sashimi Set 7</h5>
                         <h6 class="card-title  text-center fw-bold mt-2" style="color: #cf0000;">121$</h6>
+                        <a class="btn btn-dark  addToCart mt-2 pt-3" data-id="73" data-name="Sashimi Set 7"
+                            data-price="121">Order</a>
 
-                        <a href=" " class="addToCart" data-id="72" data-name="Wedding Set 1" data-price="121"><button
-                                class="glow-on-hover-buy mt-3 " type="button">Order
-                            </button></a>
                     </div>
 
                 </div>
@@ -510,7 +460,8 @@
                     <div class="card-body ">
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sushi Roll </h5>
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Items </h5>
-                        <a href="pages/sushi-roll.html"><button class="glow-on-hover-menu mt-3 " type="button">View More
+                        <a href="../correction-pages/sushi-roll.html"><button class="glow-on-hover-menu mt-3 "
+                                type="button">View More
                             </button></a>
                     </div>
 
@@ -526,7 +477,7 @@
                         <h5 class="card-title fw-bold text-center mt-2" style="color: #cf0000;">Donut & Burger</h5>
                         <h5 class="card-title fw-bold text-center mt-2" style="color: #cf0000;"> Items</h5>
 
-                        <a href="pages/donut-and-burger.html"><button class="glow-on-hover-menu mt-3 "
+                        <a href="../correction-pages/donut-and-burger.html"><button class="glow-on-hover-menu mt-3 "
                                 type="button">View
                                 More
                             </button></a>
@@ -544,7 +495,8 @@
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sashimi</h5>
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Items</h5>
 
-                        <a href="pages/salmon.html"><button class="glow-on-hover-menu mt-3" type="button">View More
+                        <a href="../correction-pages/sashimi.html"><button class="glow-on-hover-menu mt-3"
+                                type="button">View More
                             </button></a>
                     </div>
 
@@ -561,7 +513,8 @@
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Sushi Cake</h5>
                         <h5 class="card-title text-center fw-bold mt-2" style="color: #cf0000;">Items</h5>
 
-                        <a href="pages/sushiCake.html"><button class="glow-on-hover-menu mt-3 " type="button">View More
+                        <a href="../correction-pages/sushi-cake.html"><button class="glow-on-hover-menu mt-3 "
+                                type="button">View More
                             </button></a>
                     </div>
 
@@ -686,26 +639,26 @@
     <!-- counter start  -->
     <div class="container-fluid counter-up mt-5 ">
         <div class="row counter-content">
-            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box "  style="border: 1px dashed #fff;">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box " style="border: 1px dashed #fff;">
                 <div class="icon "><i class="fa fa-history "></i></div>
                 <div class="counter-num fw-bolder ">12</div>
                 <div class="counter-text">Years</div>
 
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box"  style="border: 1px dashed #fff;">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
                 <div class="icon"><i class="fa fa-chess-rook"></i></div>
                 <div class="counter-num">197</div>
                 <div class="counter-text">Staffs</div>
 
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box"  style="border: 1px dashed #fff;">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
                 <div class="icon"><i class="fa fa-users"></i></div>
                 <div class="counter-num">722436</div>
                 <div class="counter-text">Customers</div>
 
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box"  style="border: 1px dashed #fff;">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-lg-5" class="box" style="border: 1px dashed #fff;">
                 <div class="icon"><i class="fa fa-award"></i></div>
                 <div class="counter-num">50</div>
                 <div class="counter-text">Awards</div>
@@ -717,7 +670,7 @@
     <!-- counter end -->
 
     <!--  customer reviews start -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col">
                 <div class="logo-container-about" id="about">
@@ -733,18 +686,18 @@
                     <div class="splide__track"
                         style="background-image: linear-gradient(to top, #252525 0%, #8d0404 90%);">
                         <ul class="splide__list">
-                            <li class="splide__slide ps-lg-5 ">.
+                            <li class="splide__slide  ">
                                 <div class="hovereffect1">
                                     <img class="img-responsive img-fluid" src="../images/customer1.jpg" alt="">
                                     <div class="overlay1">
-                                        <h2>とても おいしいです.😋 そして雰囲気がいいレストレんです✨</h2>
+                                        <h2> ✨ とても おいしいです.😋</h2>
                                         <a class="info1" href="#"><i class="fa-regular fa-star"></i><i
                                                 class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                                                 class="fa-regular fa-star"></i></a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="splide__slide ps-lg-5">.
+                            <li class="splide__slide ps-lg-4">
                                 <div class="hovereffect1">
                                     <img class="img-responsive img-fluid" src="../images/customer2.jfif" alt="">
                                     <div class="overlay1">
@@ -757,7 +710,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="splide__slide ps-lg-5">.
+                            <li class="splide__slide ps-lg-5">
                                 <div class="hovereffect1">
                                     <img class="img-responsive img-fluid" src="../images/customer4.jpg" alt="">
                                     <div class="overlay1">
@@ -769,7 +722,7 @@
                                 </div>
                             </li>
 
-                            <li class="splide__slide ps-lg-5">.
+                            <li class="splide__slide ps-lg-5">
                                 <div class="hovereffect1">
                                     <img class="img-responsive img-fluid" src="../images/customer3.jpg" alt="">
                                     <div class="overlay1">
@@ -811,7 +764,7 @@
 
 
     <!-- map -->
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="logo-container-about " id="contact-about" data-aos="fade-down">
             <h1 id="page-logo " class="text-center mt-3 ">Contact</h1>
         </div>

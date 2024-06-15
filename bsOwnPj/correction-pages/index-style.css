@@ -182,6 +182,8 @@
 
 }
 
+
+
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -237,8 +239,10 @@
     }
 }
 
+
+
 /* glow on hover buy */
-.glow-on-hover-buy {
+.index-add .addToCart {
     width: 270px;
     height: 60px;
     border: none;
@@ -249,12 +253,12 @@
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-family: 'Alfa Slab One', cursive;
 
 }
 
-.glow-on-hover-buy:before {
+.index-add .addToCart:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -271,19 +275,19 @@
     border-radius: 10px;
 }
 
-.glow-on-hover-buy:active {
+.index-add .addToCart:active {
     color: #000
 }
 
-.glow-on-hover-buy:active:after {
+.index-add .addToCart:active:after {
     background: transparent;
 }
 
-.glow-on-hover-buy:hover:before {
+.index-add .addToCart:hover:before {
     opacity: 1;
 }
 
-.glow-on-hover-buy:after {
+.index-add .addToCart:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -477,18 +481,14 @@
     border-radius: 50% !important;
 }
 
-/* css counter */
+/*  counter */
 .counter-up {
     background: url(../images/about-us9.webp) no-repeat;
-    min-height: 40vh;
-    /* padding-top: 20px; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* padding: 0 50px; */
+    min-height: 40vh;    
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    /* margin-top: 120px !important; */
+   
 
 }
 
@@ -505,7 +505,7 @@
 .counter-content {
     position: relative;
     z-index: 2;
-    /* display: flex; */
+    
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
@@ -543,7 +543,10 @@
 }
 
 .counter-up {
-    padding: 50px 50px 0 50px;
+    /* padding: 50px 50px 0 50px; */
+    padding-left: 27px !important;
+    padding-top: 40px !important;
+    
 }
 
 
@@ -860,8 +863,8 @@ footer {
 
 
 .logo-footer {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 
 }
