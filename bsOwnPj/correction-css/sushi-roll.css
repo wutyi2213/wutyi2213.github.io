@@ -1,13 +1,33 @@
+/* navbar  */
+.menu-nav {
+    cursor: pointer;
+}
+
+.menu-list-nav ul a li button:hover {
+
+    color: #be1919 !important;
+    opacity: 0.7;
+
+
+}
+
+.menu-list-nav {
+    font-family: 'Alfa Slab One', cursive;
+    /* font-size: 20px !important; */
+}
+
+
+
 .sushi-roll-title {
     text-align: center;
-  
+
 }
 
 .sushi-roll-title h3 {
     font-size: 30px;
     position: relative;
     display: inline-block;
-   
+
     font-family: 'Alfa Slab One', cursive;
     cursor: pointer;
 }
